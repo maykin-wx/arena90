@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neymar está de volta ao Santos!</title>
+    <link rel="stylesheet" href="css/bootstrap.css ">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <script src="js/jquery-3.7.1.min.js" defer></script>
+    <script src="js/bootstrap.js" defer></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark corroxo">
+        <a class="navbar-brand fonte coramarelo" href="index.html"><img src="img/logo1.png" class="logo1 ml-3"> arena 90</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto ml-5">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="placaraovivo.html">Placar ao vivo</a></li>
+                <li class="nav-item active"><a class="nav-link" href="destaque.html">Destaques</a></li>
+                <li class="nav-item"><a class="nav-link" href="classificacao.html">Classificação</a></li>
+            </ul>
+            <a href="login.html" class="btn btn-outline-light mr-2" data-toggle="modal"
+                data-target="#modalLogin">Login</a>
+            <a href="registro.html" class="btn btn-amarelo" data-toggle="modal"
+                data-target="#modalRegistro">Registrar</a>
+        </div>
+    </nav>
+    <a href="destaque.html" class="voltarr">
+        <div>destaques</div>
+    </a>
+    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="TituloModalCentralizado">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="maiorlogin">
+                        <form action="index.html">
+                            <div class="form-group">
+                                <label class="imputlogin textnegrito">Email</label>
+                                <input type="email" class="form-control" aria-describedby="emailHelp"
+                                    placeholder="Digite seu Email">
+                            </div>
+                            <div class="form-group">
+                                <label class="imputlogin textnegrito">Senha</label>
+                                <input type="password" class="form-control" placeholder="Digite sua Senha">
+                            </div>
+                            <div class="divbtnlogin">
+                                <button type="submit" class="btn btnlogin textnegrito corroxo">Entrar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalRegistro" tabindex="-1" role="dialog"
+        aria-labelledby="TituloModalCentralizadoRegistro" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="TituloModalCentralizadoRegistro">Registro</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="maiorlogin">
+                        <form action="index.html">
+                            <div class="form-group">
+                                <label class="imputlogin textnegrito">Nome</label>
+                                <input type="text" class="form-control" placeholder="Digite seu Nome">
+                            </div>
+                            <div class="form-group">
+                                <label class="imputlogin textnegrito">Sobrenome</label>
+                                <input type="text" class="form-control" placeholder="Digite seu Sobrenome">
+                            </div>
+                            <div class="form-group">
+                                <label class="imputlogin textnegrito">Data de Nascimento</label>
+                                <input type="date" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label class="imputlogin textnegrito">Email</label>
+                                <input type="email" class="form-control" aria-describedby="emailHelp"
+                                    placeholder="Digite seu Email">
+                            </div>
+                            <div class="form-group">
+                                <label class="imputlogin textnegrito">Estado</label>
+                                <select class="form-control">
+                                    <option value="">Selecione seu Estado</option>
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="imputlogin textnegrito">Senha</label>
+                                <input type="password" class="form-control">
+                            </div>
+                            <div class="divbtnlogin">
+                                <button type="submit" class="btn btnlogin textnegrito corroxo">Registrar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container mt-4">
+
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <img src="img/neymar-santos.png" class="img-fluid">
+            </div>
+            <div class="col-md-6 col-12 d-flex flex-column justify-content-center">
+                <h1 class="text-center text-md-left textnegrito textroxo">Neymar está de volta ao Santos!</h1><br><br>
+                <p class="text-center text-md-left">
+                    O retorno tão esperado finalmente aconteceu! Neymar Jr. assinou contrato com o Santos e está pronto
+                    para brilhar novamente com a camisa que o revelou para o mundo.
+                </p>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-12">
+                <p>
+                    Após mais de uma década jogando no futebol europeu, Neymar pegou todos de surpresa ao anunciar sua
+                    volta ao Santos. A notícia foi recebida com euforia pela torcida santista, que desde sua saída para
+                    o Barcelona em 2013 sonhava com esse momento.
+                </p>
+                <p>
+                    A negociação foi longa e envolveu diversas partes, já que Neymar tem contrato vigente com o
+                    Al-Hilal, da Arábia Saudita. No entanto, um acordo foi selado para que o atacante retornasse ao
+                    Peixe por empréstimo até o final da temporada.
+                </p>
+                <p>
+                    Assim que a volta foi confirmada, a diretoria do Santos organizou um evento especial na Vila Belmiro
+                    para apresentar Neymar novamente aos torcedores. O estádio ficou lotado, e a festa contou com
+                    música, homenagens e um show pirotécnico digno da grandeza do jogador.
+                </p>
+                <p>
+                    Emocionado, Neymar agradeceu o carinho da torcida e prometeu dedicação total para recolocar o Santos
+                    entre os protagonistas do futebol brasileiro. Agora, resta saber se o camisa 10 conseguirá liderar o
+                    Peixe rumo a mais títulos!
+                </p><br>
+                <p class="textnegrito text-center">Texto gerado pelo ChatGpt, pode haver informações erradas</p>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <footer class="text-light text-center py-3 mt-5  ">
+        <div class="newsletters corroxo">
+            <div class="orgnews">
+                Inscreva-se na newsletter Arena 90 e receba as notícias no seu email.
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control imputnews" placeholder="Digite seu Nome">
+                        <input type="email" class="form-control imputnews" aria-describedby="emailHelp"
+                            placeholder="Digite seu Email">
+                        <button type="submit" class="btn btnnews textnegrito ">Inscrever</button>
+                    </div>
+            </div>
+            </form>
+        </div>
+        <div class="parterodape corroxo">
+            <p>&copy; 2025 Arena 90. Todos os direitos reservados.</p>
+            <div>
+                <a href="index.html" class="text-light mx-2">Facebook</a>
+                <a href="index.html" class="text-light mx-2">Instagram</a>
+                <a href="index.html" class="text-light mx-2">Twitter</a>
+                <a href="fonts/norwester.otf" download="Norwester.otf" class="text-light mx-2">Fonte</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

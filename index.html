@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arena 90</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <script src="js/jquery-3.7.1.min.js" defer></script>
+    <script src="js/bootstrap.js" defer></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark corroxo">
+        <a class="navbar-brand fonte coramarelo" href="index.html">
+            <img src="img/logo1.png" class="logo1 ml-3"> arena 90
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto ml-5">
+                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="placaraovivo.html">Placar ao vivo</a></li>
+                <li class="nav-item"><a class="nav-link" href="destaque.html">Destaques</a></li>
+                <li class="nav-item"><a class="nav-link" href="classificacao.html">Classificação</a></li>
+            </ul>
+            <a href="login.html" class="btn btn-outline-light mr-2" data-toggle="modal"
+                data-target="#modalLogin">Login</a>
+            <a href="registro.html" class="btn btn-amarelo" data-toggle="modal"
+                data-target="#modalRegistro">Registrar</a>
+        </div>
+    </nav>
+
+    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="TituloModalCentralizado">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="maiorlogin">
+                        <form action="index.html">
+                            <div class="form-group">
+                                <label class="imputlogin textnegrito">Email</label>
+                                <input type="email" class="form-control" aria-describedby="emailHelp"
+                                    placeholder="Digite seu Email">
+                            </div>
+                            <div class="form-group">
+                                <label class="imputlogin textnegrito">Senha</label>
+                                <input type="password" class="form-control" placeholder="Digite sua Senha">
+                            </div>
+                            <div class="divbtnlogin">
+                                <button type="submit" class="btn btnlogin textnegrito corroxo">Entrar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalRegistro" tabindex="-1" role="dialog"
+        aria-labelledby="TituloModalCentralizadoRegistro" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="TituloModalCentralizadoRegistro">Registro</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="maiorlogin">
+                        <form action="index.html">
+                            <div class="form-group">
+                                <label class="imputlogin textnegrito">Nome</label>
+                                <input type="text" class="form-control" placeholder="Digite seu Nome">
+                            </div>
+                            <div class="form-group">
+                                <label class="imputlogin textnegrito">Sobrenome</label>
+                                <input type="text" class="form-control" placeholder="Digite seu Sobrenome">
+                            </div>
+                            <div class="form-group">
+                                <label class="imputlogin textnegrito">Data de Nascimento</label>
+                                <input type="date" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label class="imputlogin textnegrito">Email</label>
+                                <input type="email" class="form-control" aria-describedby="emailHelp"
+                                    placeholder="Digite seu Email">
+                            </div>
+                            <div class="form-group">
+                                <label class="imputlogin textnegrito">Estado</label>
+                                <select class="form-control">
+                                    <option value="">Selecione seu Estado</option>
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="imputlogin textnegrito">Senha</label>
+                                <input type="password" class="form-control">
+                            </div>
+                            <div class="divbtnlogin">
+                                <button type="submit" class="btn btnlogin textnegrito corroxo">Registrar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contcarrosel">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/slide-carrosel1.png">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/slide-carrosel2.png">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/slide-carrosel3.png">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="container mt-4 separardestaq">
+        <h2 class="text-center textnegrito textroxo fonte">Destaques</h2><br>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/neymar-santos.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Neymar está de volta ao Santos!</h5>
+                        <p class="card-text">O craque brasileiro retorna ao clube que o revelou! Veja detalhes da
+                            negociação e expectativas para sua reestreia.</p>
+                        <div class="divbtndestques fonte">
+                            <a href="neymar.html" class="btn btndestques">Ler mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/haaland-gol.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Haaland bate novo recorde!</h5>
+                        <p class="card-text">O atacante norueguês continua imparável! Veja os números impressionantes e
+                            recordes quebrados nesta temporada.</p>
+                        <div class="divbtndestques fonte">
+                            <a href="haaland.html" class="btn btndestques">Ler mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/mercado-transferencias.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Janela de Transferências Agitada</h5>
+                        <p class="card-text">Grandes nomes do futebol mundial estão trocando de time! Veja as
+                            contratações e rumores mais quentes do mercado.</p>
+                        <div class="divbtndestques fonte">
+                            <a href="transferencia.html" class="btn btndestques">Ler mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <h2 class="text-center textroxo  textnegrito mb-4 fonte">Perguntas Frequentes</h2>
+
+    <div class="perguntasfreq ">
+        <div class="accordion" id="faqAccordion">
+            <div class="card">
+                <div class="card-header" id="faqHeading1">
+                    <h5 class="mb-0">
+                        <button class="btn w-100 text-left fundocinza fundofdfd textnegrito collapsed" type="button"
+                            data-toggle="collapse" data-target="#faq1" aria-expanded="false" aria-controls="faq1">
+                            Como a Arena 90 funciona?
+                        </button>
+                    </h5>
+                </div>
+                <div id="faq1" class="collapse" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        A Arena 90 é uma plataforma dedicada ao futebol, onde você pode acompanhar jogos, resultados ao
+                        vivo, estatísticas detalhadas e muito mais. Basta se registrar e acessar o conteúdo exclusivo.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="faqHeading2">
+                    <h5 class="mb-0">
+                        <button class="btn w-100 fundocinza text-left textnegrito collapsed" type="button"
+                            data-toggle="collapse" data-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                            Como me registrar para ver os conteúdos?
+                        </button>
+                    </h5>
+                </div>
+                <div id="faq2" class="collapse" aria-labelledby="faqHeading2" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Para se registrar, clique em "Registrar" no menu, preencha o formulário com suas informações e
+                        confirme seu cadastro. Após isso, você terá acesso completo aos nossos serviços.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="faqHeading3">
+                    <h5 class="mb-0">
+                        <button class="btn w-100 fundocinza text-left textnegrito collapsed" type="button"
+                            data-toggle="collapse" data-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                            Como acompanhar os placares ao vivo?
+                        </button>
+                    </h5>
+                </div>
+                <div id="faq3" class="collapse" aria-labelledby="faqHeading3" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Para visualizar os placares ao vivo, basta acessar a página "Placar ao Vivo" no menu principal.
+                        Lá, você encontrará todas as partidas em andamento com resultados atualizados em tempo real.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="faqHeading4">
+                    <h5 class="mb-0">
+                        <button class="btn fundocinza w-100 text-left textnegrito collapsed" type="button"
+                            data-toggle="collapse" data-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                            O site é atualizado com que frequência?
+                        </button>
+                    </h5>
+                </div>
+                <div id="faq4" class="collapse" aria-labelledby="faqHeading4" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        O conteúdo do site é atualizado constantemente, com novas notícias e resultados sendo publicados
+                        diariamente, para manter você sempre informado sobre tudo que acontece no mundo do futebol.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="faqHeading5">
+                    <h5 class="mb-0">
+                        <button class="btn fundocinza w-100 text-left textnegrito collapsed" type="button"
+                            data-toggle="collapse" data-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                            Quais recursos o site oferece?
+                        </button>
+                    </h5>
+                </div>
+                <div id="faq5" class="collapse" aria-labelledby="faqHeading5" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Usuários registrados têm acesso a conteúdos exclusivos como análises detalhadas, estatísticas em
+                        tempo real, vídeos de melhores momentos e a possibilidade de personalizar sua experiência com
+                        notificações e alertas personalizados sobre jogos e times de sua preferência.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <footer class="text-light text-center py-3 mt-5">
+        <div class="newsletters corroxo">
+            <div class="orgnews">
+                Inscreva-se na newsletter Arena 90 e receba as notícias no seu email.
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control imputnews" placeholder="Digite seu Nome">
+                        <input type="email" class="form-control imputnews" aria-describedby="emailHelp"
+                            placeholder="Digite seu Email">
+                        <button type="submit" class="btn btnnews textnegrito">Inscrever</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="parterodape corroxo">
+            <p>&copy; 2025 Arena 90. Todos os direitos reservados.</p>
+            <div>
+                <a href="index.html" class="text-light mx-2">Facebook</a>
+                <a href="index.html" class="text-light mx-2">Instagram</a>
+                <a href="index.html" class="text-light mx-2">Twitter</a>
+                <a href="fonts/norwester.otf" download="Norwester.otf" class="text-light mx-2">Fonte</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

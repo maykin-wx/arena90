@@ -171,19 +171,19 @@
   }
   .newsletters  {
     width: 80%;
-    height: 13rem;
+    height: 14rem;
   }
 }
 
-@media (min-width: 1025) and (max-width: 1829) {
+@media (min-width: 1025px) and (max-width: 1829px) {
   .contcarrosel img {
     object-fit: cover;
     object-position: center;
-    height: 20em;
+    height: 22em;
   }
 
   .contcarrosel {
-    height: 20em;
+    height: 22em;
     background-color: #000000;
   }
   .divbtnlogin{
@@ -212,7 +212,7 @@
   }
   .newsletters  {
     width: 70%;
-    height: 13rem;
+    height: 14rem;
   }
 
 }
